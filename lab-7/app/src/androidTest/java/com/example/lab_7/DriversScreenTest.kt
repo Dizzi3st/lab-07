@@ -46,7 +46,7 @@ class DriversScreenTest {
             .onNodeWithTag("clearButton")
             .performClick()
 
-        composeTestRule // check that the list is empty by checking if the first element exists
+        composeTestRule // check that the added element no longer exists
             .onNodeWithText("Max Verstappen")
             .assertDoesNotExist()
 
